@@ -3,7 +3,7 @@ const http = require('http')
 const port = 80
 
 const server = http.createServer((request, response) => {
-  response.writeHead(200, {'Content-Type': 'text/plain'})
+  response.writeHead(200, {'Content-Type': 'image/jpeg; charset=UTF-8'})
   response.write('Hello World\n')
   response.end('Version: ' + process.env.NODE_VERSION + '\n')
 })
